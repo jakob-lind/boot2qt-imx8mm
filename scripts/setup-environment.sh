@@ -82,7 +82,7 @@ if [ ! -e ${PWD}/${BUILDDIRECTORY} ]; then
       ;;
   esac
 
-  LAYERSCONF=${PWD}/sources/templates/bblayers.conf.imx.sample
+  LAYERSCONF=${PWD}/sources/templates/${LAYERSCONF}
   if [ ! -e ${LAYERSCONF} ]; then
     echo "Error: Could not find layer conf '${LAYERSCONF}'"
     return 1
