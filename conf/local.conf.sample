@@ -26,6 +26,7 @@
 ## $QT_END_LICENSE$
 ##
 ############################################################################
+DISTRO_FEATURES_remove = " vulkan"
 
 #
 # This file is your local configuration file and is where all local user settings
