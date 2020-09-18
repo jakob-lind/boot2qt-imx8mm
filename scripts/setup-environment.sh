@@ -55,6 +55,33 @@ fi
 BUILDDIRECTORY=${BUILDDIRECTORY:-build-${MACHINE}}
 
 if [ ! -e ${PWD}/${BUILDDIRECTORY} ]; then
+  case ${MACHINE} in
+    apalis-*|colibri-*)
+      LAYERSCONF="bblayers.conf.toradex.sample"
+      ;;
+    nitrogen*)
+      LAYERSCONF="bblayers.conf.boundary.sample"
+      ;;
+    imx*)
+      LAYERSCONF="bblayers.conf.fsl.sample"
+      ;;
+    raspberrypi*)
+      LAYERSCONF="bblayers.conf.rpi.sample"
+      ;;
+    intel-corei7-64)
+      LAYERSCONF="bblayers.conf.intel.sample"
+      ;;
+    jetson-*)
+      LAYERSCONF="bblayers.conf.jetson.sample"
+      ;;
+    mcm-imx8m-mini)
+      LAYERSCONF="bblayers.conf.imx8m-mini.sample"
+      ;;
+    *)
+      LAYERSCONF="bblayers.conf.sample"
+      ;;
+  esac
+
   LAYERSCONF=${PWD}/sources/templates/bblayers.conf.imx.sample
   if [ ! -e ${LAYERSCONF} ]; then
     echo "Error: Could not find layer conf '${LAYERSCONF}'"
