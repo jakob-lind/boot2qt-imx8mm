@@ -26,7 +26,8 @@
 ## $QT_END_LICENSE$
 ##
 ############################################################################
-DISTRO_FEATURES_remove = " vulkan"
+DISTRO_FEATURES_append = " x11 wayland pam"
+DISTRO_FEATURES_remove = " vulkan directfb"
 MACHINE_FIRMWARE_remove = " firmware-imx-brcm firmware-imx-iwlwifi"
 #
 # This file is your local configuration file and is where all local user settings
