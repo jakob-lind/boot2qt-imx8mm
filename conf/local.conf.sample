@@ -26,9 +26,10 @@
 ## $QT_END_LICENSE$
 ##
 ############################################################################
-DISTRO_FEATURES_append = " x11 wayland pam"
-DISTRO_FEATURES_remove = " vulkan directfb"
+DISTRO_FEATURES_append = " wayland pam jailhouse"
+DISTRO_FEATURES_remove = " x11 vulkan directfb"
 MACHINE_FIRMWARE_remove = " firmware-imx-brcm firmware-imx-iwlwifi"
+IMAGE_INSTALL_append = " nodejs nodejs-npm pciutils git packagegroup-core-buildessential"
 #
 # This file is your local configuration file and is where all local user settings
 # are placed. The comments in this file give some guide to the options a new user
@@ -49,13 +50,13 @@ MACHINE_FIRMWARE_remove = " firmware-imx-brcm firmware-imx-iwlwifi"
 # option determines how many tasks bitbake should run in parallel:
 #
 # Default to setting automatically based on cpu count
-BB_NUMBER_THREADS ?= "${@oe.utils.cpu_count()}"
+BB_NUMBER_THREADS ?= "4"
 # 
 # The second option controls how many processes make should run in parallel when
 # running compile tasks:
 #
 # Default to setting automatically based on cpu count
-PARALLEL_MAKE ?= "-j ${@oe.utils.cpu_count()}"
+PARALLEL_MAKE ?= "-j 4"
 #
 # For a quad-core machine, BB_NUMBER_THREADS = "4", PARALLEL_MAKE = "-j 4" would
 # be appropriate for example.
