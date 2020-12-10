@@ -1,4 +1,4 @@
-set SDKROOT=%~sdp0%
+set SDKROOT=%~dp0%
 set SDKTARGETSYSROOT=%SDKROOT%\sysroots\aarch64-poky-linux
 set SDKTARGETSYSROOT=%SDKTARGETSYSROOT:\=/%
 set PATH=%SDKROOT%\sysroots\i686-pokysdk-mingw32\usr\bin;%SDKROOT%\sysroots\i686-pokysdk-mingw32\usr\bin\..\i686-pokysdk-mingw32\bin;%SDKROOT%\sysroots\i686-pokysdk-mingw32\usr\bin\aarch64-poky-linux;%SDKROOT%\sysroots\i686-pokysdk-mingw32\usr\bin\aarch64-poky-linux-musl;%PATH%
