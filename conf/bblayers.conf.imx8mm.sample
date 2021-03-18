@@ -61,9 +61,21 @@ BBLAYERS ?= " \
   ${BSPDIR}/sources/meta-bsp-imx8mm \
   ${BSPDIR}/sources/meta-boot2qt-imx8mm \
   "
-# Remove extra QT5 layers
+# Remove incompatible layers
 BBMASK += "\
   meta-freescale/dynamic-layers/qt5-layer/recipes-qt/qt5/ \
   meta-imx/meta-sdk/dynamic-layers/qt5-layer/recipes-qt/qt5/ \
+  meta-bsp-imx8mm/recipes-bsp/imx-mkimage/ \
+  meta-bsp-imx8mm/recipes-bsp/u-boot/ \
+  meta-bsp-imx8mm/recipes-bsp/bt-start/ \
+  meta-bsp-imx8mm/recipes-bsp/alsa-state/ \
+  meta-bsp-imx8mm/recipes-security/optee-imx/ \
+  meta-bsp-imx8mm/recipes-kernel/linux/ \
+  meta-compulab-bsp/meta-bsp/recipes-bsp/u-boot-scr/ \
+  meta-compulab-bsp/meta-graphics/recipes-graphics/wayland/ \
+  meta-compulab-bsp/meta-desktop/recipes-desktop/cl-uboot/ \
+  meta-compulab-bsp/meta-desktop/recipes-desktop/cl-deploy/ \
+  meta-compulab-bsp/meta-multimedia/recipes-multimedia/pulseaudio/ \
+  meta-compulab/recipes-graphics/wayland/ \
   "
 

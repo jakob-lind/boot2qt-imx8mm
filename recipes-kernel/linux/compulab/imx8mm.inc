@@ -1,0 +1,36 @@
+SRC_URI_append = " \
+	file://0000-imx8m-mini-add-basic-support.patch \
+	file://0001-dts-Fix-usdhc1-properties.patch \
+	file://0002-defconfig-Delete-some-unnecessary-drivers.patch \
+	file://0003-ucm-imx8m-mini-dts-remove-phy-supply.patch \
+	file://0004-ucm-imx8m-mini-dts-Enable-onboard-LED.patch \
+	file://0005-ucm-imx8m-mini-dts-Fix-CSI-reset-GPIO.patch \
+	file://0006-ucm-imx8m-mini-dts-Enable-onboard-EEPROM.patch \
+	file://0007-dts-Fix-pmic-interrupt-configuration.patch \
+	file://0008-defconfig-Enable-regualtor.patch \
+	file://0009-dts-Enable-Sterling-LWB5-Wi-Fi-over-SDIO.patch \
+	file://0010-mcm-imx8m-mini-dts-Add-device-tree-files.patch \
+	file://0011-mcm-imx8m-mini-Add-a-supported-panel.patch \
+	file://0012-mcm-imx8m-mini-config-Add-defconfig.patch \
+	file://0013-ov5640_mipi_v2-gpio_set_value_cansleep.patch \
+	file://0014-mcm-imx8m-mini-uart4-Add-modem-reset.patch \
+	file://0015-Add-w25q16-support.patch \
+	file://0016-mcm-imx8m-mini_defconfig-Update-defconfig.patch \
+	file://0017-mcm-imx8m-mini-dts-Remove-unused-stuff.patch \
+	file://0018-mcm-imx8m-mini-dts-Update-usbotg1-flags-for-otg.patch \
+	file://0019-mcm-imx8m-mini-dts-Update-sai2-definition.patch \
+	file://0020-mcm-imx8m-mini-dts-Update-pmic-definition.patch \
+	file://0021-mcm-imx8m-mini-dts-Enable-UART2.patch \
+	file://0022-mcm-imx8m-mini-dts-Enable-snvs_pwrkey.patch \
+	file://0023-mcm-imx8m-mini-config-Update-defconfig.patch \
+	file://0024-can-mcp25xxfd-Microchip-MCP25xxFD-Family-CAN-control.patch \
+	file://0025-serial-imx-allow-passing-rs485-options.patch \
+	file://0026-mcm-imx8m-mini-defconfig-Update-defconfig.patch \
+	file://0027-mcm-imx8m-mini-dts-Add-mcm-imx8m-mini-m4.dts.patch \
+	file://0028-mcm-imx8m-mini-defconfig-Update-defconfig.patch \
+	file://0029-mcm-imx8m-mini-dts-Change-the-usbotg2-settings.patch \
+	file://0030-mcm-imx8m-mini-dts-usbotg-Disable-over-current-contr.patch \
+	file://0031-sb-mcm-imx8-dts-Add-usb2_sel-regulator.patch \
+	file://0032-mcm-imx8m-mini-dts-Expand-backlight-level-list.patch \
+	file://defconfig \
+"
