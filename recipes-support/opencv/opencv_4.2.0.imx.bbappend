@@ -1,0 +1,2 @@
+LICENSE = "BSD-3-Clause"
+SRCREV_opencv = "bda89a6469aa79ecd8713967916bd754bff1d931" 
