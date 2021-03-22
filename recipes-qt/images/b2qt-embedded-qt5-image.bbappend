@@ -2,7 +2,7 @@ include conf/distro/include/fsl.inc
 include conf/distro/include/fsl-imx-preferred-env.inc
 
 # Use proper image types
-IMAGE_FSTYPES += "ext3 wic"
+IMAGE_FSTYPES += "uboot-mxsboot-sdcard"
 
 # Setup QBSP content
 QBSP_IMAGE_CONTENT ?= "\

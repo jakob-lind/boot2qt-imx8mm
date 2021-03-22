@@ -74,7 +74,7 @@ if [ ! -e ${PWD}/${BUILDDIRECTORY} ]; then
     jetson-*)
       LAYERSCONF="bblayers.conf.jetson.sample"
       ;;
-    raysafe-imx8mm*)
+    mcm-imx8m-mini)
       LAYERSCONF="bblayers.conf.imx8mm.sample"
       ;;
     *)
